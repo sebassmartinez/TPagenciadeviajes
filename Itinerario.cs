@@ -16,5 +16,11 @@ namespace TPagenciadeviajes
         {
             InitializeComponent();
         }
+
+        private void Itinerario_Load(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }

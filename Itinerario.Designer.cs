@@ -259,6 +259,7 @@
             Controls.Add(Numitirnerario);
             Name = "Itinerario";
             Text = "Itinerario";
+            Load += Itinerario_Load;
             Personas.ResumeLayout(false);
             Personas.PerformLayout();
             Seleccionservicio.ResumeLayout(false);

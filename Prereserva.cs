@@ -12,9 +12,14 @@ namespace TPagenciadeviajes
 {
     public partial class Prereserva : Form
     {
+        PersonasModel model;
         public Prereserva()
         {
             InitializeComponent();
+        }
+        private void Presreserva_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
