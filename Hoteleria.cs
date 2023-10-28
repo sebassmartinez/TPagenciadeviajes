@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace TPagenciadeviajes
 {
-    public partial class Reserva : Form
+    public partial class Hoteleria : Form
     {
-        public Reserva()
+        public Hoteleria()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void hotelcontinuar_Click(object sender, EventArgs e)
         {
+            Itinerario formulario= new Itinerario();    
+            formulario.Show();
 
         }
     }

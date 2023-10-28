@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TPagenciadeviajes
 {
-    public partial class Reserva : Form
+    public partial class Vuelos : Form
     {
-        public Reserva()
+        public Vuelos()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

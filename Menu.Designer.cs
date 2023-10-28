@@ -36,16 +36,17 @@
             // 
             // Itinerario
             // 
-            Itinerario.Location = new Point(147, 75);
+            Itinerario.Location = new Point(154, 75);
             Itinerario.Name = "Itinerario";
             Itinerario.Size = new Size(75, 23);
             Itinerario.TabIndex = 0;
             Itinerario.Text = "Itinerario";
             Itinerario.UseVisualStyleBackColor = true;
+            Itinerario.Click += Itinerario_Click;
             // 
             // Prereserva
             // 
-            Prereserva.Location = new Point(300, 75);
+            Prereserva.Location = new Point(286, 75);
             Prereserva.Name = "Prereserva";
             Prereserva.Size = new Size(75, 23);
             Prereserva.TabIndex = 1;
@@ -55,20 +56,21 @@
             // 
             // Reserva
             // 
-            Reserva.Location = new Point(434, 75);
+            Reserva.Location = new Point(423, 75);
             Reserva.Name = "Reserva";
-            Reserva.Size = new Size(75, 23);
+            Reserva.Size = new Size(102, 23);
             Reserva.TabIndex = 2;
-            Reserva.Text = "Completar reserva";
+            Reserva.Text = "Reserva";
             Reserva.UseVisualStyleBackColor = true;
+            Reserva.Click += Reserva_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(547, 269);
+            button4.Location = new Point(450, 153);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 3;
-            button4.Text = "button4";
+            button4.Text = "Inicio";
             button4.UseVisualStyleBackColor = true;
             // 
             // Menu

@@ -21,6 +21,12 @@ namespace TPagenciadeviajes
         {
 
         }
-       
+
+        private void Cancerlarreserva_Click(object sender, EventArgs e)
+        {
+            Menu formulario = new Menu();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }

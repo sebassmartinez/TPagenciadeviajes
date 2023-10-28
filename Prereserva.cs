@@ -35,5 +35,12 @@ namespace TPagenciadeviajes
             }
 
         }
+
+        private void Cancelarprereserva_Click(object sender, EventArgs e)
+        {
+            Menu formulario = new Menu();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }

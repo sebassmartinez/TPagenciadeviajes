@@ -31,18 +31,18 @@
             Numitirnerario = new TextBox();
             label1 = new Label();
             Personas = new GroupBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
             Confirmarpersonas = new Button();
+            comboBox3 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             Seleccionservicio = new GroupBox();
-            Vuelos = new RadioButton();
-            Hoteleria = new RadioButton();
             Buscarservicios = new Button();
+            Hoteleria = new RadioButton();
+            Vuelos = new RadioButton();
             listBox1 = new ListBox();
             listadoservicios = new GroupBox();
             Presupuestar = new Button();
@@ -86,23 +86,46 @@
             Personas.TabStop = false;
             Personas.Text = "Personas";
             // 
-            // label2
+            // Confirmarpersonas
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(34, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Adultos ";
+            Confirmarpersonas.Location = new Point(240, 146);
+            Confirmarpersonas.Name = "Confirmarpersonas";
+            Confirmarpersonas.Size = new Size(75, 23);
+            Confirmarpersonas.TabIndex = 7;
+            Confirmarpersonas.Text = "Confirmar";
+            Confirmarpersonas.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // comboBox3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(34, 81);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 15);
-            label3.TabIndex = 1;
-            label3.Text = "Infantes";
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(89, 123);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(121, 23);
+            comboBox3.TabIndex = 6;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(89, 78);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(121, 23);
+            comboBox2.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(89, 35);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 4;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(42, 131);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 15);
+            label5.TabIndex = 3;
             // 
             // label4
             // 
@@ -113,46 +136,23 @@
             label4.TabIndex = 2;
             label4.Text = "Menores";
             // 
-            // label5
+            // label3
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(42, 131);
-            label5.Name = "label5";
-            label5.Size = new Size(0, 15);
-            label5.TabIndex = 3;
+            label3.AutoSize = true;
+            label3.Location = new Point(34, 81);
+            label3.Name = "label3";
+            label3.Size = new Size(49, 15);
+            label3.TabIndex = 1;
+            label3.Text = "Infantes";
             // 
-            // comboBox1
+            // label2
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(89, 35);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 4;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(89, 78);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 5;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(89, 123);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 6;
-            // 
-            // Confirmarpersonas
-            // 
-            Confirmarpersonas.Location = new Point(240, 146);
-            Confirmarpersonas.Name = "Confirmarpersonas";
-            Confirmarpersonas.Size = new Size(75, 23);
-            Confirmarpersonas.TabIndex = 7;
-            Confirmarpersonas.Text = "Confirmar";
-            Confirmarpersonas.UseVisualStyleBackColor = true;
+            label2.AutoSize = true;
+            label2.Location = new Point(34, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Adultos ";
             // 
             // Seleccionservicio
             // 
@@ -166,16 +166,14 @@
             Seleccionservicio.TabStop = false;
             Seleccionservicio.Text = "Seleccionar servicio";
             // 
-            // Vuelos
+            // Buscarservicios
             // 
-            Vuelos.AutoSize = true;
-            Vuelos.Location = new Point(24, 32);
-            Vuelos.Name = "Vuelos";
-            Vuelos.Size = new Size(63, 19);
-            Vuelos.TabIndex = 0;
-            Vuelos.TabStop = true;
-            Vuelos.Text = "Vuelos ";
-            Vuelos.UseVisualStyleBackColor = true;
+            Buscarservicios.Location = new Point(195, 64);
+            Buscarservicios.Name = "Buscarservicios";
+            Buscarservicios.Size = new Size(75, 23);
+            Buscarservicios.TabIndex = 8;
+            Buscarservicios.Text = "Buscar";
+            Buscarservicios.UseVisualStyleBackColor = true;
             // 
             // Hoteleria
             // 
@@ -188,14 +186,16 @@
             Hoteleria.Text = "Hoteleria";
             Hoteleria.UseVisualStyleBackColor = true;
             // 
-            // Buscarservicios
+            // Vuelos
             // 
-            Buscarservicios.Location = new Point(195, 64);
-            Buscarservicios.Name = "Buscarservicios";
-            Buscarservicios.Size = new Size(75, 23);
-            Buscarservicios.TabIndex = 8;
-            Buscarservicios.Text = "Buscar";
-            Buscarservicios.UseVisualStyleBackColor = true;
+            Vuelos.AutoSize = true;
+            Vuelos.Location = new Point(24, 32);
+            Vuelos.Name = "Vuelos";
+            Vuelos.Size = new Size(63, 19);
+            Vuelos.TabIndex = 0;
+            Vuelos.TabStop = true;
+            Vuelos.Text = "Vuelos ";
+            Vuelos.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -244,6 +244,7 @@
             Cancerlarreserva.TabIndex = 7;
             Cancerlarreserva.Text = "Cancerlar";
             Cancerlarreserva.UseVisualStyleBackColor = true;
+            Cancerlarreserva.Click += Cancerlarreserva_Click;
             // 
             // Itinerario
             // 
