@@ -51,6 +51,7 @@
             Prereserva.TabIndex = 1;
             Prereserva.Text = "Preserva";
             Prereserva.UseVisualStyleBackColor = true;
+            Prereserva.Click += Prereserva_Click;
             // 
             // Reserva
             // 

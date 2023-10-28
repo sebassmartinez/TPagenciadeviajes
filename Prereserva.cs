@@ -17,8 +17,22 @@ namespace TPagenciadeviajes
         {
             InitializeComponent();
         }
-        private void Presreserva_Load(object sender, EventArgs e)
+
+        private void Prereserva_Load(object sender, EventArgs e)
         {
+            model = new PersonasModel();
+            foreach (var nuevapersona in model.listapersonas)
+            {
+                var item = new ListViewItem();
+                item.Text = nuevapersona.Nombre.ToString();
+                item.SubItems.Add(nuevapersona.Apellido);
+                item.SubItems.Add(nuevapersona.Apellido);
+                item.SubItems.Add(nuevapersona.Edad);
+                item.Tag = nuevapersona;
+
+                PersonasListView.Items.Add(item);
+
+            }
 
         }
     }

@@ -6,5 +6,11 @@ namespace TPagenciadeviajes
         {
             InitializeComponent();
         }
+
+        private void Prereserva_Click(object sender, EventArgs e)
+        {
+          Prereserva formulario = new Prereserva();
+            formulario.ShowDialog();
+        }
     }
 }
