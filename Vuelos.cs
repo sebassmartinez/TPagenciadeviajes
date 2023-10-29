@@ -16,5 +16,10 @@ namespace TPagenciadeviajes
         {
             InitializeComponent();
         }
+
+        private void Vuelos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

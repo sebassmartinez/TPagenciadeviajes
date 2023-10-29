@@ -33,11 +33,13 @@
             apellidohd = new ColumnHeader();
             Dnidh = new ColumnHeader();
             edadhd = new ColumnHeader();
+            columnHeader1 = new ColumnHeader();
             label1 = new Label();
             textBox1 = new TextBox();
             groupBox1 = new GroupBox();
             button1 = new Button();
             groupBox2 = new GroupBox();
+            comboBox1 = new ComboBox();
             button2 = new Button();
             label4 = new Label();
             label3 = new Label();
@@ -50,30 +52,24 @@
             editarlistabtn = new Button();
             eliminarbtn = new Button();
             groupBox3 = new GroupBox();
-            groupBox4 = new GroupBox();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            label6 = new Label();
-            radioButton1 = new RadioButton();
-            label5 = new Label();
-            textBox2 = new TextBox();
             button3 = new Button();
             Cancelarprereserva = new Button();
+            label5 = new Label();
+            columnHeader2 = new ColumnHeader();
+            codhotel = new ColumnHeader();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // PersonasListView
             // 
-            PersonasListView.Columns.AddRange(new ColumnHeader[] { nombreHd, apellidohd, Dnidh, edadhd });
+            PersonasListView.Columns.AddRange(new ColumnHeader[] { nombreHd, apellidohd, Dnidh, edadhd, columnHeader1, columnHeader2, codhotel });
             PersonasListView.FullRowSelect = true;
-            PersonasListView.Location = new Point(52, 22);
+            PersonasListView.Location = new Point(25, 22);
             PersonasListView.MultiSelect = false;
             PersonasListView.Name = "PersonasListView";
-            PersonasListView.Size = new Size(256, 81);
+            PersonasListView.Size = new Size(436, 81);
             PersonasListView.TabIndex = 0;
             PersonasListView.UseCompatibleStateImageBehavior = false;
             PersonasListView.View = View.Details;
@@ -93,6 +89,10 @@
             // edadhd
             // 
             edadhd.Text = "Edad";
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Servicios";
             // 
             // label1
             // 
@@ -132,6 +132,8 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(comboBox1);
             groupBox2.Controls.Add(button2);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(label3);
@@ -143,10 +145,19 @@
             groupBox2.Controls.Add(Nombrepersona);
             groupBox2.Location = new Point(12, 123);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(344, 143);
+            groupBox2.Size = new Size(425, 143);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Personas";
+            groupBox2.Text = "Pasajeros";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Hotel-Cuidad-Pasajero-Precio", "Vuelo-Pasajero-Precio-Destino " });
+            comboBox1.Location = new Point(291, 57);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 12;
             // 
             // button2
             // 
@@ -162,9 +173,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(147, 61);
             label4.Name = "label4";
-            label4.Size = new Size(33, 15);
+            label4.Size = new Size(101, 15);
             label4.TabIndex = 11;
-            label4.Text = "Edad";
+            label4.Text = "Fecha nacimiento";
             // 
             // label3
             // 
@@ -223,7 +234,7 @@
             // 
             // editarlistabtn
             // 
-            editarlistabtn.Location = new Point(69, 109);
+            editarlistabtn.Location = new Point(147, 118);
             editarlistabtn.Name = "editarlistabtn";
             editarlistabtn.Size = new Size(78, 23);
             editarlistabtn.TabIndex = 4;
@@ -232,7 +243,7 @@
             // 
             // eliminarbtn
             // 
-            eliminarbtn.Location = new Point(215, 118);
+            eliminarbtn.Location = new Point(261, 118);
             eliminarbtn.Name = "eliminarbtn";
             eliminarbtn.Size = new Size(78, 23);
             eliminarbtn.TabIndex = 12;
@@ -246,114 +257,48 @@
             groupBox3.Controls.Add(editarlistabtn);
             groupBox3.Location = new Point(12, 291);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(388, 147);
+            groupBox3.Size = new Size(487, 147);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
             groupBox3.Text = "Listado pasajeros";
             // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(radioButton4);
-            groupBox4.Controls.Add(radioButton3);
-            groupBox4.Controls.Add(radioButton2);
-            groupBox4.Controls.Add(label6);
-            groupBox4.Controls.Add(radioButton1);
-            groupBox4.Controls.Add(label5);
-            groupBox4.Controls.Add(textBox2);
-            groupBox4.Location = new Point(406, 185);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(362, 215);
-            groupBox4.TabIndex = 6;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Cupon de pago ";
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(7, 170);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(99, 19);
-            radioButton4.TabIndex = 18;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "Transferencias";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(7, 145);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(117, 19);
-            radioButton3.TabIndex = 17;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Tarjeta de Credito";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(7, 120);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(113, 19);
-            radioButton2.TabIndex = 16;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Tarjeta de Debito";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 66);
-            label6.Name = "label6";
-            label6.Size = new Size(95, 15);
-            label6.TabIndex = 15;
-            label6.Text = "Metodo de pago";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(7, 95);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(67, 19);
-            radioButton1.TabIndex = 14;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Efectivo";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(0, 25);
-            label5.Name = "label5";
-            label5.Size = new Size(40, 15);
-            label5.TabIndex = 13;
-            label5.Text = "Titular";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(46, 25);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 12;
-            // 
             // button3
             // 
-            button3.Location = new Point(487, 415);
+            button3.Location = new Point(505, 415);
             button3.Name = "button3";
             button3.Size = new Size(123, 23);
             button3.TabIndex = 7;
-            button3.Text = "Reservar Producto";
+            button3.Text = "Prereservar Producto";
             button3.UseVisualStyleBackColor = true;
             // 
             // Cancelarprereserva
             // 
-            Cancelarprereserva.Location = new Point(616, 415);
+            Cancelarprereserva.Location = new Point(645, 415);
             Cancelarprereserva.Name = "Cancelarprereserva";
             Cancelarprereserva.Size = new Size(123, 23);
             Cancelarprereserva.TabIndex = 8;
             Cancelarprereserva.Text = "Cancelar";
             Cancelarprereserva.UseVisualStyleBackColor = true;
             Cancelarprereserva.Click += Cancelarprereserva_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(291, 39);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 15);
+            label5.TabIndex = 13;
+            label5.Text = "Servicio";
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Cod vuelo";
+            columnHeader2.Width = 70;
+            // 
+            // codhotel
+            // 
+            codhotel.Text = "Cod Hotel";
+            codhotel.Width = 70;
             // 
             // Prereserva
             // 
@@ -362,7 +307,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(Cancelarprereserva);
             Controls.Add(button3);
-            Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -374,8 +318,6 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -403,15 +345,12 @@
         private Button editarlistabtn;
         private Button eliminarbtn;
         private GroupBox groupBox3;
-        private GroupBox groupBox4;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private Label label6;
-        private RadioButton radioButton1;
-        private Label label5;
-        private TextBox textBox2;
         private Button button3;
         private Button Cancelarprereserva;
+        private ComboBox comboBox1;
+        private ColumnHeader columnHeader1;
+        private Label label5;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader codhotel;
     }
 }

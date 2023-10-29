@@ -18,7 +18,7 @@ namespace TPagenciadeviajes
         {
             Itinerario formulario = new Itinerario();
             formulario.Show();
-            this.Hide();    
+            this.Hide();
         }
 
         private void Reserva_Click(object sender, EventArgs e)

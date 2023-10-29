@@ -38,7 +38,7 @@
             // 
             Itinerario.Location = new Point(154, 75);
             Itinerario.Name = "Itinerario";
-            Itinerario.Size = new Size(75, 23);
+            Itinerario.Size = new Size(96, 43);
             Itinerario.TabIndex = 0;
             Itinerario.Text = "Itinerario";
             Itinerario.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             // 
             Prereserva.Location = new Point(286, 75);
             Prereserva.Name = "Prereserva";
-            Prereserva.Size = new Size(75, 23);
+            Prereserva.Size = new Size(91, 43);
             Prereserva.TabIndex = 1;
             Prereserva.Text = "Preserva";
             Prereserva.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // 
             Reserva.Location = new Point(423, 75);
             Reserva.Name = "Reserva";
-            Reserva.Size = new Size(102, 23);
+            Reserva.Size = new Size(102, 43);
             Reserva.TabIndex = 2;
             Reserva.Text = "Reserva";
             Reserva.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(450, 153);
+            button4.Location = new Point(532, 215);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(105, 23);
             button4.TabIndex = 3;
             button4.Text = "Inicio";
             button4.UseVisualStyleBackColor = true;
@@ -77,13 +77,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(673, 250);
             Controls.Add(button4);
             Controls.Add(Reserva);
             Controls.Add(Prereserva);
             Controls.Add(Itinerario);
             Name = "Menu";
-            Text = "Menu ";
+            Text = "Modulo de ventas";
             ResumeLayout(false);
         }
 

@@ -19,7 +19,7 @@ namespace TPagenciadeviajes
 
         private void hotelcontinuar_Click(object sender, EventArgs e)
         {
-            Itinerario formulario= new Itinerario();    
+            Itinerario formulario = new Itinerario();
             formulario.Show();
 
         }
